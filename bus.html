@@ -1,0 +1,368 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Vujahday+Script&display=swap" rel="stylesheet">
+    <style>
+        .navbar{  background: rgb(34,193,195);
+            background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,0.6699813714548319) 100%); }
+    </style>
+    <title>bus</title>
+  </head>
+  <body>
+    <!--start of corosal bar-->
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="../imgs/buspg.jpg" class="d-block w-100" alt="..." style="height: 750px; object-fit: cover;">
+          </div>
+        </div>
+        <div class="carousel-caption d-none d-md-block my-5 p-3">
+        <div class="card " style="margin-left: -100px; margin-right: -60px; margin-bottom: 20rem; height: 6rem;width: 80rem;">
+        <span class=" px-md-1">
+            <div class="card-body" >
+              <div class="btn btn-group">
+              <div class="dropdown">
+                <button class="btn btn-dark dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" style="font-size: xx-large;">
+                  FROM
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item" href="#">Bengaluru</a></li>
+                  <li><a class="dropdown-item" href="#">Chennai</a></li>
+                  <li><a class="dropdown-item" href="#">kerala</a></li>
+                  <li><a class="dropdown-item" href="#">Goa</a></li>
+                  <li><a class="dropdown-item" href="#">Mumbai</a></li>
+                  <li><a class="dropdown-item" href="#">Delhi</a></li>
+                  <li><a class="dropdown-item" href="#">kolkata</a></li>
+                </ul>
+              </div>
+              
+              <div class="p-2"></div>
+              <div class="dropdown">
+                <button class="btn btn-dark dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false" style="font-size: xx-large;">
+                  TO
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                  <li><a class="dropdown-item" href="#">Bengaluru</a></li>
+                  <li><a class="dropdown-item" href="#">Chennai</a></li>
+                  <li><a class="dropdown-item" href="#">kerala</a></li>
+                  <li><a class="dropdown-item" href="#">Goa</a></li>
+                  <li><a class="dropdown-item" href="#">Mumbai</a></li>
+                  <li><a class="dropdown-item" href="#">Delhi</a></li>
+                  <li><a class="dropdown-item" href="#">kolkata</a></li>
+                </ul>
+              </div>
+
+              <div class="p-2"></div>
+              <div class="dropdown">
+                <button class="btn btn-dark dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" style="font-size: xx-large;">
+                  DEPARTURE
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                  <input type="date" id="check-indate">
+                </ul>
+              </div>
+
+              <div class="p-2"></div>
+              <div class="dropdown">
+                <button class="btn btn-dark dropdown-toggle" type="button" id="dropdownMenuButton3" data-bs-toggle="dropdown" aria-expanded="false" style="font-size: xx-large;">
+                  ARRIVAL
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton3">
+                  <input type="date" id="check-indate">
+                </ul>
+              </div>
+
+              <div class="p-2"></div>
+              <div class="dropdown">
+                <button class="btn btn-dark dropdown-toggle" type="button" id="dropdownMenuButton4" data-bs-toggle="dropdown" aria-expanded="false" style="font-size: xx-large;">
+                  TRAVELLERS & CLASS
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton4">
+                <div class="card" style="height:23rem;width: 25rem;">
+                <div class="card-body ">
+                  <h1>ADULTS</h1>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" name="inlinecheckboxOptions" id="inlineCheckbox1" value="option1">
+                    <label class="form-check-label" for="inlineCheckbox1">1</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                    <label class="form-check-label" for="inlineCheckbox2">2</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                    <label class="form-check-label" for="inlineCheckbox3">3</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option4">
+                    <label class="form-check-label" for="inlineCheckbox4">4</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox5" value="option5">
+                    <label class="form-check-label" for="inlineCheckbox5">5</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox6" value="option6">
+                    <label class="form-check-label" for="inlineCheckbox6">6</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox7" value="option7">
+                    <label class="form-check-label" for="inlineCheckbox7">7</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox8" value="option8">
+                    <label class="form-check-label" for="inlineCheckbox8">8</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox9" value="option9">
+                    <label class="form-check-label" for="inlineCheckbox9">9</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox10" value="option10">
+                    <label class="form-check-label" for="inlineCheckbox10">10</label>
+                  </div>
+
+                  <div class="mt-2"></div>
+                  <h3>CHILDREN</h3>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                    <label class="form-check-label" for="inlineCheckbox1">1</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                    <label class="form-check-label" for="inlineCheckbox2">2</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                    <label class="form-check-label" for="inlineCheckbox3">3</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option4">
+                    <label class="form-check-label" for="inlineCheckbox4">4</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox5" value="option5">
+                    <label class="form-check-label" for="inlineCheckbox5">5</label>
+                  </div>
+
+                  <div class="mt-2"></div>
+                  <h2>CLASS</h2>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                    <label class="form-check-label" for="inlineCheckbox1">Non-AC-Sleeper</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                    <label class="form-check-label" for="inlineCheckbox2">AC-Sleeper</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                    <label class="form-check-label" for="inlineCheckbox3">Non-AC-Seater</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option4">
+                    <label class="form-check-label" for="inlineCheckbox4">AC-Seater</label>
+                  </div>
+                  <div class="mt-3"></div>
+                  <button class="btn btn-outline-primary" type="submit">Apply</button>
+                  <button class="btn btn-outline-primary" type="reset">clear</button>
+                </ul>
+                </div>
+                </div>
+              </div>
+              <button class="btn btn-warning my-5;" type="submit" style="margin-left: -3rem;margin-top: 2rem; font-size: xx-large;">SEARCH</button>
+            </div>
+            </div>
+            
+    </div>
+    <!--end of corosal bar-->
+    <!--end of top of page-->
+
+    <!--start of cards-->
+      <div class="card border-danger" style="height: 17rem;width: 60rem; margin-left: 20rem; margin-top: 5rem;">
+          <div class="card-body">
+            <img src="../imgs/icons/bus_srs.png" style="height: 5rem;" >
+            <h1 style="font-size: x-large; margin-left: 6rem; margin-top: -5rem;font-family:'Vujahday Script', cursive;">S.R.S Travels</h1>
+            <p style="margin-left: 6rem;">Non-AC-sleeper</p>
+            <p style="margin-left: 19rem;margin-top: -5rem;">Departure</p>
+            <p style="margin-left: 37rem;margin-top: -2.5rem;">Arrival</p>
+            <h2 style="margin-left: 19rem;font-family: 'Oswald', sans-serif;">Bengaluru</h2>
+            <p style="margin-left: 19rem;" >05:00 AM</p>
+            <p class="font-bold" style= "margin-left: 16rem; margin-top: -0.4rem;">KSRTC Bus Stand, Majestic</p>
+            <h3 style="margin-left: 37rem; margin-top: -7.8rem;font-family: 'Oswald', sans-serif;">Mumbai</h3>
+            <p style="margin-left: 37rem;" >07:00 AM</p>
+            <p class="font-bold" style ="margin-left:36rem;margin-top: -0rem;">Bandra Bus Station</p>
+            <img src="../imgs/icons/arrow.png" style="margin-left: 29.5rem; width: 5rem; margin-top: -14rem;">
+            <p  style="margin-left: 50rem; margin-top: -9rem;margin-bottom: 4rem; font-size: xx-large; color: rgb(255, 0, 0);font-style: italic;">&#x20b9;800</p>
+            <button class="btn btn-success" type="submit" style="margin-left: 50rem; margin-top: -1rem;">Book now</button>
+            <p>Amenities: <img src="../imgs/icons/blanket.webp" style="height: 3rem;" title="Pillow & Blanket"> <img src="../imgs/icons/bottle.png " style="height: 3rem;"title="Water Bottle"> <img src="../imgs/icons/charger.png" style="height: 3rem;"title="Charging slot"></p>
+          </div>
+      </div>
+
+      <div class="card border-warning" style="height: 17rem;width: 60rem; margin-left: 20rem; margin-top: 5rem;">
+        <div class="card-body">
+          <img src="../imgs/icons/bus_vrl.png" style="height: 5rem;" >
+          <h1 style="font-size: x-large; margin-left: 6rem; margin-top: -5rem;font-family:'Vujahday Script', cursive;">VRL Travels</h1>
+          <p style="margin-left: 6rem;">AC-sleeper</p>
+          <p style="margin-left: 19rem;margin-top: -5rem;">Departure</p>
+          <p style="margin-left: 37rem;margin-top: -2.5rem;">Arrival</p>
+          <h2 style="margin-left: 19rem;font-family: 'Oswald', sans-serif;">Delhi</h2>
+          <p style="margin-left: 19rem;" >15:00 PM</p>
+          <p class="font-bold" style= "margin-left: 19rem;">Karol Bagh</p>
+          <h3 style="margin-left: 37rem; margin-top: -8rem;font-family: 'Oswald', sans-serif;">Chennai</h3>
+          <p style="margin-left: 37rem;" >12:00 PM</p>
+          <p class="font-bold" style= "margin-left: 36rem;">Vellore Bus Station</p>
+          <img src="../imgs/icons/arrow.png" style="margin-left: 29.5rem; width: 5rem; margin-top: -9rem;">
+          <p  style="margin-left: 50rem; margin-top: -9rem;margin-bottom: 4rem; font-size: xx-large; color: rgb(255, 0, 0);font-style: italic;">&#x20b9;1800</p>
+          <button class="btn btn-success" type="submit" style="margin-left: 50rem; margin-top: -1rem;">Book now</button>
+          <p>Amenities: <img src="../imgs/icons/blanket.webp" style="height: 3rem;" title="Pillow & Blanket"> <img src="../imgs/icons/bottle.png " style="height: 3rem;"title="Water Bottle"> <img src="../imgs/icons/charger.png" style="height: 3rem;"title="Charging slot"></p>
+        </div>
+    </div>
+
+    <div class="card border-info" style="height: 17rem;width: 60rem; margin-left: 20rem; margin-top: 5rem;">
+      <div class="card-body">
+        <img src="../imgs/icons/bus_srs.png" style="height: 5rem;" >
+        <h1 style="font-size: x-large; margin-left: 6rem; margin-top: -5rem;font-family:'Vujahday Script', cursive;">S.R.S Travels</h1>
+        <p style="margin-left: 6rem;">Non-AC-sleater</p>
+        <p style="margin-left: 19rem;margin-top: -5rem;">Departure</p>
+        <p style="margin-left: 37rem;margin-top: -2.5rem;">Arrival</p>
+        <h2 style="margin-left: 19rem;font-family: 'Oswald', sans-serif;">Kerala</h2>
+        <p style="margin-left: 19rem;" >05:00 PM</p>
+        <p class="font-bold" style= "margin-left: 16rem;">Trishur Bus Station</p>
+        <h3 style="margin-left: 37rem; margin-top: -8rem;font-family: 'Oswald', sans-serif;">Goa</h3>
+        <p style="margin-left: 37rem;" >08:00 PM</p>
+        <p class="font-bold" style= "margin-left: 36rem;">Panaji Bus Station</p>
+        <img src="../imgs/icons/arrow.png" style="margin-left: 29.5rem; width: 5rem; margin-top: -9rem;">
+        <p  style="margin-left: 50rem; margin-top: -9rem;margin-bottom: 4rem; font-size: xx-large; color: rgb(255, 0, 0);font-style: italic;">&#x20b9;900</p>
+        <button class="btn btn-success" type="submit" style="margin-left: 50rem; margin-top: -1rem;">Book now</button>
+        <p>Amenities: <img src="../imgs/icons/blanket.webp" style="height: 3rem;" title="Pillow & Blanket"> <img src="../imgs/icons/bottle.png " style="height: 3rem;"title="Water Bottle"> <img src="../imgs/icons/charger.png" style="height: 3rem;"title="Charging slot"></p>
+      </div>
+    </div>
+
+    <div class="card border-success" style="height: 17rem;width: 60rem; margin-left: 20rem; margin-top: 5rem;">
+      <div class="card-body">
+        <img src="../imgs/icons/bus_ksrtc.jpg" style="height: 5rem;" >
+        <h1 style="font-size: x-large; margin-left: 6rem; margin-top: -5rem;font-family:'Vujahday Script', cursive;">K.S.R.T.C</h1>
+        <p style="margin-left: 6rem;">AC-sleeper</p>
+        <p style="margin-left: 19rem;margin-top: -5rem;">Departure</p>
+        <p style="margin-left: 37rem;margin-top: -2.5rem;">Arrival</p>
+        <h2 style="margin-left: 19rem;font-family: 'Oswald', sans-serif;">Bengaluru</h2>
+        <p style="margin-left: 19rem;" >11:00 AM</p>
+        <p class="font-bold" style= "margin-left: 16rem;">KSRTC Bus Station,Majestic</p>
+        <h3 style="margin-left: 37rem; margin-top: -8rem;font-family: 'Oswald', sans-serif;">Kolkata</h3>
+        <p style="margin-left: 37rem;" >11:00 PM</p>
+        <p class="font-bold" style= "margin-left: 36rem;">Barrackpore Bus Station</p>
+        <img src="../imgs/icons/arrow.png" style="margin-left: 29.5rem; width: 5rem; margin-top: -9rem;">
+        <p  style="margin-left: 50rem; margin-top: -9rem;margin-bottom: 4rem; font-size: xx-large; color: rgb(255, 0, 0);font-style: italic;">&#x20b9;2000</p>
+        <button class="btn btn-success" type="submit" style="margin-left: 50rem; margin-top: -1rem;">Book now</button>
+        <p>Amenities: <img src="../imgs/icons/blanket.webp" style="height: 3rem;" title="Pillow & Blanket"> <img src="../imgs/icons/bottle.png " style="height: 3rem;"title="Water Bottle"> <img src="../imgs/icons/charger.png" style="height: 3rem;"title="Charging slot"></p>
+      </div>
+    </div>
+
+    <div class="card border-primary" style="height: 17rem;width: 60rem; margin-left: 20rem; margin-top: 5rem;">
+      <div class="card-body">
+        <img src="../imgs/icons/bus_srs.png" style="height: 5rem;" >
+        <h1 style="font-size: x-large; margin-left: 6rem; margin-top: -5rem;font-family:'Vujahday Script', cursive;">S.R.S Travels</h1>
+        <p style="margin-left: 6rem;">Non-AC-sleeper</p>
+        <p style="margin-left: 19rem;margin-top: -5rem;">Departure</p>
+        <p style="margin-left: 37rem;margin-top: -2.5rem;">Arrival</p>
+        <h2 style="margin-left: 19rem;font-family: 'Oswald', sans-serif;">Mumbai</h2>
+        <p style="margin-left: 19rem;" >05:00 AM</p>
+        <p class="font-bold" style= "margin-left: 16rem;">Bandra Bus Station</p>
+        <h3 style="margin-left: 37rem; margin-top: -8rem;font-family: 'Oswald', sans-serif;">Delhi</h3>
+        <p style="margin-left: 37rem;" >07:00 PM</p>
+        <p class="font-bold" style= "margin-left: 36rem;">Karol Bagh</p>
+        <img src="../imgs/icons/arrow.png" style="margin-left: 29.5rem; width: 5rem; margin-top: -9rem;">
+        <p  style="margin-left: 50rem; margin-top: -9rem;margin-bottom: 4rem; font-size: xx-large; color: rgb(255, 0, 0);font-style: italic;">&#x20b9;600</p>
+        <button class="btn btn-success" type="submit" style="margin-left: 50rem; margin-top: -1rem;">Book now</button>
+        <p>Amenities: <img src="../imgs/icons/blanket.webp" style="height: 3rem;" title="Pillow & Blanket"> <img src="../imgs/icons/bottle.png " style="height: 3rem;"title="Water Bottle"> <img src="../imgs/icons/charger.png" style="height: 3rem;"title="Charging slot"></p>
+      </div>
+    </div>
+
+    <div class="card border-dark" style="height: 17rem;width: 60rem; margin-left: 20rem; margin-top: 5rem;">
+      <div class="card-body">
+        <img src="../imgs/icons/bus_srs.png" style="height: 5rem;" >
+        <h1 style="font-size: x-large; margin-left: 6rem; margin-top: -5rem;font-family:'Vujahday Script', cursive;">S.R.S Travels</h1>
+        <p style="margin-left: 6rem;">AC-sleeper</p>
+        <p style="margin-left: 19rem;margin-top: -5rem;">Departure</p>
+        <p style="margin-left: 37rem;margin-top: -2.5rem;">Arrival</p>
+        <h2 style="margin-left: 19rem;font-family: 'Oswald', sans-serif;">Kolkata</h2>
+        <p style="margin-left: 19rem;" >05:00 AM</p>
+        <p class="font-bold" style= "margin-left: 16rem;">Barrackpore Bus Station</p>
+        <h3 style="margin-left: 37rem; margin-top: -8rem;font-family: 'Oswald', sans-serif;">Kerala</h3>
+        <p style="margin-left: 37rem;" >12:00 PM</p>
+        <p class="font-bold" style= "margin-left: 36rem;">Trishur Bus Station</p>
+        <img src="../imgs/icons/arrow.png" style="margin-left: 29.5rem; width: 5rem; margin-top: -9rem;">
+        <p  style="margin-left: 50rem; margin-top: -9rem;margin-bottom: 4rem; font-size: xx-large; color: rgb(255, 0, 0);font-style: italic;">&#x20b9;1600</p>
+        <button class="btn btn-success" type="submit" style="margin-left: 50rem; margin-top: -1rem;">Book now</button>
+        <p>Amenities: <img src="../imgs/icons/blanket.webp" style="height: 3rem;" title="Pillow & Blanket"> <img src="../imgs/icons/bottle.png " style="height: 3rem;"title="Water Bottle"> <img src="../imgs/icons/charger.png" style="height: 3rem;"title="Charging slot"></p>
+      </div>
+    </div>
+
+    </div>
+    <!--end of cards-->
+      
+    
+
+        <!--start of page navigation-->
+        <p style="margin-left: 47.5rem; margin-bottom: -5rem;margin-top: 5rem;">Page 1 of 3</p>
+        <nav aria-label="Page navigation example" style="margin-left: 45rem; margin-top: 5rem;">
+          <ul class="pagination" >
+            <li class="page-item disabled" >
+              <a class="page-link " href="#" aria-label="Previous">
+                <span aria-hidden="true">&laquo;</span>
+              </a>
+            </li>
+            <li class="page-item"><a class="page-link" href="bus.html">1</a></li>
+            <li class="page-item"><a class="page-link" href="bus1.html">2</a></li>
+            <li class="page-item"><a class="page-link" href="bus2.html">3</a></li>
+            <li class="page-item">
+              <a class="page-link" href="bus2.html" aria-label="Next">
+                <span aria-hidden="true">&raquo;</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <!--end of page navigation-->
+
+        <!--start of footer-->
+      <div class="card-footer my-5" style="background-color: rgb(231, 204, 204); height: 20rem; ">
+        <img src ="../imgs/4s.png " style ="height:10rem;width:10rem;"> 
+        <h1 style="margin-left: 1100px; font-size: x-large; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Follows us on</h1>
+        <div class="my-3" style="margin-left: 1100px;">
+          <img src ="../imgs/fb.png" style="height:3rem;width:3rem;"> 
+          <p style="margin-left: -10px;">Facebook</p>
+        </div>
+        <div class="md-5" style="margin-left: 1200px;margin-top: -85px;">
+          <img src ="../imgs/ig.png" style="height:3rem;width:3rem;">
+          <p style="margin-left: -10px;">Instagram</p>
+        </div>
+          <div class="md-5" style="margin-left: 1300px; margin-top: -90px;">
+          <img src ="../imgs/twitter.png" style="height:3rem;width:3rem;">
+          <p style="margin-left: -10px;">Twitter</p>
+        </div>
+          <small class="text" style="margin-left: -1100px;">2021 Company , Inc </small>
+        
+    </div>
+    </div>
+        <!--end of footer-->
+    
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
